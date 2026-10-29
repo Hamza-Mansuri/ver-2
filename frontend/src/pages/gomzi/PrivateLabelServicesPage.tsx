@@ -78,14 +78,15 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
       <section className="gip-section gip-topics">
         <div className="container gip-split" style={{ alignItems: 'center' }}>
           <div className="gip-split-visual">
-            <div className="gip-img-rounded-wrap">
+            <div className="gip-img-rounded-wrap" style={{ maxWidth: '520px', margin: '0 auto' }}>
               <img
-                src={asset('SCIENCE-BASED-PRODUCT-FORMULATION.jpg')}
-                alt="Scientific laboratory glassware and active botanical extract research"
-                width="729"
-                height="446"
+                src={asset('science-based-product-formulation.jpg')}
+                alt="Formulation research scientist conducting precision microscopy and analytical formulation in laboratory"
+                width="682"
+                height="1024"
                 loading="lazy"
                 className="gip-feature-photo"
+                style={{ aspectRatio: '3 / 3.8', objectFit: 'cover', objectPosition: 'center 15%' }}
               />
             </div>
             <p className="gip-caption">RESEARCH-BACKED ACTIVE FORMULATION &amp; INGREDIENT EFFICACY</p>

@@ -1,3 +1,7 @@
+/* ==========================================================================
+   CONTACT PAGE STYLES — GOMZI LIFE SCIENCE
+   ========================================================================== */
+
 .contact-page-wrapper {
   background: #fdfbf7;
   color: var(--ink, #1f2937);
@@ -9,7 +13,7 @@
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 24px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 
 .contact-breadcrumb {
@@ -46,7 +50,7 @@
 
 .contact-header {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 44px;
 }
 
 .contact-title {
@@ -58,50 +62,57 @@
 }
 
 .contact-subtitle {
-  font-size: 16px;
+  font-size: 15.5px;
   line-height: 1.8;
   color: #4b5563;
-  max-width: 620px;
+  max-width: 640px;
   margin-inline: auto;
 }
 
+/* ==========================================================================
+   2-COLUMN SPLIT: COMPANY DETAILS (LEFT) + INQUIRY FORM (RIGHT)
+   ========================================================================== */
+
 .contact-card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.15fr;
   gap: 0;
   background: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(24, 50, 32, 0.08);
-  border: 1px solid #e5e9df;
+  border-radius: 20px;
+  box-shadow: 0 16px 45px rgba(24, 50, 32, 0.07);
+  border: 1px solid #e2e8db;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
+/* Left: Company Details */
 .contact-details-col {
-  padding: 48px 52px;
+  padding: 48px 44px;
+  background: #fafbf8;
+  border-right: 1px solid #edf1e8;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .contact-company-name {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.03em;
   color: #172c20;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .contact-items-stack {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 
 .contact-item-row {
   display: flex;
   align-items: flex-start;
-  gap: 18px;
+  gap: 16px;
   text-decoration: none;
   color: inherit;
   transition: transform 0.15s;
@@ -112,8 +123,8 @@
 }
 
 .contact-icon-pill {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -142,10 +153,10 @@
 }
 
 .contact-item-label {
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 600;
   color: #111827;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   transition: color 0.2s;
 }
 
@@ -154,7 +165,7 @@
 }
 
 .contact-item-val {
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 1.6;
   color: #4b5563;
   margin: 0;
@@ -165,50 +176,220 @@
   color: #172c20;
 }
 
-.contact-inquiry-cta {
-  margin-top: 40px;
-  padding-top: 28px;
-  border-top: 1px solid #edf1e6;
+.contact-turnaround-note {
+  margin-top: 36px;
+  padding: 16px 20px;
+  background: #ffffff;
+  border: 1px solid #e4ecde;
+  border-radius: 10px;
 }
 
-.contact-submit-inquiry-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--brand, #99c229);
-  color: #172c20;
+.contact-turnaround-note strong {
+  display: block;
+  font-size: 12.5px;
+  color: #243d2e;
+  margin-bottom: 4px;
+}
+
+.contact-turnaround-note p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #607264;
+  margin: 0;
+}
+
+/* Right: Inline Project Enquiry Form */
+.contact-form-col {
+  padding: 44px 44px 48px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-title {
+  font-size: 24px;
   font-weight: 700;
-  font-size: 13.5px;
-  letter-spacing: 0.04em;
-  padding: 13px 26px;
-  border-radius: 9999px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
+  color: #172c20;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
 }
 
-.contact-submit-inquiry-btn:hover {
-  background: #8ab522;
-  transform: translateY(-1px);
+.contact-form-subtitle {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 26px;
 }
 
-.contact-map-col {
-  min-height: 440px;
-  background: #e2e8f0;
-  position: relative;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.contact-map-iframe {
-  position: absolute;
-  inset: 0;
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.contact-form-field label span {
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+.contact-form-input,
+.contact-form-select,
+.contact-form-textarea {
   width: 100%;
-  height: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fbfcf9;
+  font-size: 13.5px;
+  color: #1f2937;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-.contact-certifications {
-  border-top: 1px solid #e1e7d9;
+.contact-form-input:focus,
+.contact-form-select:focus,
+.contact-form-textarea:focus {
+  border-color: #99c229;
+  box-shadow: 0 0 0 3px rgba(153, 194, 41, 0.2);
   background: #ffffff;
 }
+
+.contact-form-textarea {
+  resize: vertical;
+  min-height: 95px;
+}
+
+.contact-form-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #99c229;
+  color: #172c20;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  border: 1px solid #8cb622;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 6px;
+  box-shadow: 0 4px 14px rgba(153, 194, 41, 0.25);
+}
+
+.contact-form-submit-btn:hover {
+  background: #8ab522;
+  color: #0f1c14;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(153, 194, 41, 0.35);
+}
+
+.contact-form-success {
+  background: #edf7e8;
+  border: 1px solid #c7e3bd;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  color: #1e3a1f;
+}
+
+.contact-form-success h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1c3d1e;
+}
+
+.contact-form-success p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #3b573c;
+  margin-bottom: 16px;
+}
+
+.contact-form-reset-btn {
+  background: #243d2e;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   HORIZONTAL GOOGLE MAP (BENEATH THE CONTACT SECTION)
+   ========================================================================== */
+
+.contact-map-horizontal-wrap {
+  margin-top: 20px;
+}
+
+.contact-map-horizontal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contact-map-horizontal-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #172c20;
+}
+
+.contact-map-horizontal-header a {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #617d25;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.contact-map-horizontal-header a:hover {
+  text-decoration: underline;
+}
+
+.contact-map-horizontal-frame {
+  height: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #dce4d6;
+  box-shadow: 0 10px 30px rgba(36, 61, 46, 0.06);
+  background: #e2e8f0;
+}
+
+.contact-map-horizontal-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
 
 @media (max-width: 992px) {
   .contact-card-grid {
@@ -216,9 +397,25 @@
   }
   .contact-details-col {
     padding: 36px 28px;
+    border-right: none;
+    border-bottom: 1px solid #edf1e8;
   }
-  .contact-map-col {
-    min-height: 380px;
+  .contact-form-col {
+    padding: 36px 28px;
+  }
+  .contact-map-horizontal-frame {
+    height: 320px;
   }
 }
 
+@media (max-width: 640px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .contact-map-horizontal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}

@@ -88,7 +88,6 @@ export default function SolutionsPage({ onInquiry }: { onInquiry: () => void }) 
                 <div className="gs-card-body">
                   <span className="gs-card-tag">{solution.tag}</span>
                   <h3>{solution.title}</h3>
-                  <p>{solution.description}</p>
                   <button type="button" className="gs-card-action" onClick={onInquiry} aria-label={`Discuss ${solution.title.toLowerCase()}`}><span>Discuss your project</span><ArrowUpRight size={19} aria-hidden="true" /></button>
                 </div>
               </article>
