@@ -1,0 +1,13 @@
+GOMZI HOMEPAGE LAB IMAGE OPTIONS
+
+1. indian-scientist-generated.png: photorealistic AI-generated fictional Indian scientist, fair light-brown skin, pipetting a sample in a bright white/sage lab. Created for the 21:25 portrait container. It is not a photograph of an actual Gomzi employee or facility.
+
+2. real-lab-pexels.jpg: real stock photograph of a laboratory professional by Pavel Danilyuk, Pexels. Source: https://www.pexels.com/photo/scientist-using-a-computer-and-test-tubes-in-a-laboratory-8442514/ . The source does not verify the person as Indian. This is the non-generated alternative, not an exact nationality match. Photographer supplies it as free stock.
+
+DISPLAY
+Use width:100%; aspect-ratio:21/25; object-fit:cover; object-position:center; in the current 378x450px image area. Keep the high-resolution source; do not stretch a landscape image into a portrait box.
+
+ANTIGRAVITY PROMPT
+On my Gomzi V2 homepage, replace only the photograph beside Your brand / Our science / Shared ambition with indian-scientist-generated.png (or real-lab-pexels.jpg if I select the real-photo option). Keep the current section dimensions, fonts, colours, spacing and all other elements unchanged. Use the existing portrait image container with aspect-ratio:21/25; object-fit:cover; object-position:center. Update alt text accurately; do not describe a stock or generated person as a real Gomzi employee. Do not modify main, push or deploy.
+
+Generation brief: natural corporate documentary portrait of fictional fair-skinned Indian lab professional in a clean nutraceutical testing lab, goggles and gloves, plausible pipetting action, bright white/sage palette, natural skin and fabric detail, no text or logos. Generated using built-in image generation.

@@ -1,0 +1,26 @@
+GOMZI PRIVATE LABEL IMAGE COLLECTION
+
+private-label-hero.png: 2048 x 768px
+private-label-range.png: 1165 x 1350px
+brand-packaging-design.png: 1166 x 1349px
+retail-impact-collection.png: 1166 x 1349px
+
+1. Hero: wide banner, negative space on left for dark title; packaging on right. Use background-size: cover; background-position: center.
+2. Private-label range: product overview beside your introduction.
+3. Brand packaging design: use beside "Designed for your brand. Engineered for retail impact."
+4. Retail impact collection: alternate or second brand/retail section.
+
+Portrait display CSS:
+width: 100%; aspect-ratio: 379 / 438; object-fit: cover; object-position: center;
+Keep a high-resolution source; do not stretch a 520x330 landscape image into this portrait area. The generated portraits are very close to your ratio; object-fit makes the tiny crop automatically.
+
+ANTIGRAVITY PROMPT
+On the V2 private-label-services page only, add these images to public/assets and use private-label-hero.png as the existing half-screen fixed-background banner. Replace the intro product image with private-label-range.png. Use brand-packaging-design.png beside Designed for your brand / Engineered for retail impact. Use retail-impact-collection.png for the other retail-product section, or keep it as an alternate if that section is absent. Portrait containers must use aspect-ratio:379/438 and object-fit:cover; preserve responsive layout. Keep the existing fonts, green theme, headings, certification section and enquiry flow. Do not duplicate sections, edit main, push or deploy.
+
+AI-generated illustrative packaging concepts, not photographs of actual Gomzi products, facilities or customers. Created using the built-in image generation tool.
+
+GENERATION BRIEFS
+Hero: bright panoramic ivory/green nutraceutical packaging range, left negative space and export cartons.
+Private-label range: portrait coordinated supplement jars, capsule bottle, pouch and carton, YOUR BRAND labels.
+Packaging design: portrait packaging mockups, label proofs and brand colour swatches.
+Retail collection: portrait shelf-ready coordinated nutrition packaging family.

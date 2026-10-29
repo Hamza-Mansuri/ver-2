@@ -1,0 +1,7 @@
+Update only the images on these three V2 pages. Keep all text, layout, fonts, certificates and enquiry functionality unchanged. Do not change main, push or deploy.
+
+1. /expertise/spray-dried-fat-powder: use functional-ingredients-banner.png for the hero headed Functional ingredients / A more versatile format.
+2. /expertise/api-supplement-premixes: use api-premixes-banner.png for the hero headed A defined blend / A clearer development path; use premix-composition-portrait.png beside Start with the composition / Define the scope.
+3. /expertise/bulk-supplements-manufacturing: use bulk-manufacturing-banner.png for the hero headed Your next product / Built for your next chapter; use production-plan-portrait.png beside A clear brief / A considered production plan.
+
+Copy the images to a dedicated public/assets folder. Scope these replacements to each page so shared image filenames do not alter unrelated pages. Banners use cover, with left space for dark headings. Preserve desktop fixed-background behaviour and mobile static fallback. Portrait containers must use aspect-ratio:381/440; width:100%; object-fit:cover; object-position:center. Do not stretch the images.

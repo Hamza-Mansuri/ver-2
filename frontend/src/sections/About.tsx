@@ -101,11 +101,11 @@ export default function About() {
 
         <div className="about-visual">
           <img
-            src="/assets/images/our-science.webp"
+            src="/assets/images/indian-scientist-generated.png"
             width="1024"
             height="682"
             loading="lazy"
-            alt="Gomzi formulation research scientist in state-of-the-art laboratory"
+            alt="Indian formulation research scientist working with laboratory samples in a clean nutraceutical testing facility"
           />
           <div className="image-caption">
             <span>01 / OUR SCIENCE</span>

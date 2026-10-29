@@ -88,9 +88,16 @@ export default function Header({ onInquiry: _onInquiry }: { onInquiry?: () => vo
         <nav id="main-nav" className={mobile ? 'main-nav is-open' : 'main-nav'} aria-label="Main navigation">
           {navigation.map(item =>
             item.path === '/expertise' ? (
-              <div className="nav-dropdown" key={item.path}>
+              <div
+                className="nav-dropdown"
+                key={item.path}
+                onMouseEnter={() => setSub(true)}
+                onMouseLeave={() => setSub(false)}
+              >
                 <div className="expertise-controls">
-                  <NavLink to={item.path}>{item.title}</NavLink>
+                  <NavLink to={item.path} onClick={() => { setSub(false); setMobile(false); }}>
+                    {item.title}
+                  </NavLink>
                   <button
                     aria-label="Toggle expertise submenu"
                     aria-expanded={sub}
@@ -102,7 +109,11 @@ export default function Header({ onInquiry: _onInquiry }: { onInquiry?: () => vo
                 </div>
                 <div id="expertise-menu" className={`dropdown-menu ${sub ? 'is-open' : ''}`}>
                   {expertise.map(child => (
-                    <NavLink key={child.path} to={child.path}>
+                    <NavLink
+                      key={child.path}
+                      to={child.path}
+                      onClick={() => { setSub(false); setMobile(false); }}
+                    >
                       {child.title}
                       <ArrowUpRight size={14} />
                     </NavLink>

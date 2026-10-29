@@ -5,7 +5,7 @@ import Modal from '../components/Modal';
 import { gallery } from '../data/gallery';
 
 export default function Gallery() {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const [selected, setSelected] = useState<(typeof gallery)[number] | null>(null);
   const visible = expanded ? gallery : gallery.slice(0, 6);
 
@@ -38,27 +38,23 @@ export default function Gallery() {
                   />
                   <ArrowUpRight size={20} />
                 </button>
-              ) : (
-                <div className="gallery__empty" aria-label={`${item.title}: photo space reserved`}>
-                  <span className="gallery__index">{item.id}</span>
-                  <span className="gallery__empty-word" aria-hidden="true">GOMZI</span>
-                  <span className="gallery__corner" aria-hidden="true" />
-                </div>
-              )}
+              ) : null}
             </div>
           ))}
         </div>
         <div className="gallery__footer">
-          <span>{expanded ? '15' : '06'} / 15 perspectives</span>
-          <button
-            className="text-link"
-            aria-expanded={expanded}
-            aria-controls="gallery-grid"
-            onClick={() => setExpanded(!expanded)}
-          >
-            {expanded ? 'Show fewer spaces' : 'Explore all 15 spaces'}
-            {expanded ? <ArrowUp size={17} /> : <ArrowDown size={17} />}
-          </button>
+          <span>{String(visible.length).padStart(2, '0')} / {String(gallery.length).padStart(2, '0')} perspectives</span>
+          {gallery.length > 6 && (
+            <button
+              className="text-link"
+              aria-expanded={expanded}
+              aria-controls="gallery-grid"
+              onClick={() => setExpanded(!expanded)}
+            >
+              {expanded ? 'Show fewer spaces' : `Explore all ${gallery.length} spaces`}
+              {expanded ? <ArrowUp size={17} /> : <ArrowDown size={17} />}
+            </button>
+          )}
         </div>
         <Modal open={!!selected} onClose={() => setSelected(null)} labelledBy="gallery-image-title" className="gallery-modal">
           {selected && (
