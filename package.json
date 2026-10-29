@@ -1,0 +1,21 @@
+{
+  "name": "gomzi-export-v2",
+  "version": "2.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace frontend -- --host 0.0.0.0",
+    "dev:backend": "npm run dev --workspace backend",
+    "build": "npm run build --workspace frontend",
+    "typecheck": "npm run typecheck --workspace frontend",
+    "test": "npm run test --workspace backend",
+    "start": "npm run start --workspace backend",
+    "preview": "npm run preview --workspace frontend -- --host 0.0.0.0"
+  }
+}

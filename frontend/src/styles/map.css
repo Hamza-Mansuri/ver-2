@@ -1,0 +1,544 @@
+.global {
+  background: var(--sage);
+}
+.global__top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+}
+.global__top h2 > span {
+  color: #668f3c;
+}
+.global__intro {
+  font-size: 14px;
+  padding-bottom: 6px;
+  line-height: 1.8;
+}
+
+/* Mobile & Tablet Quick-Select Market Chips */
+.market-chips-scroll {
+  display: none;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 6px;
+  margin-top: 24px;
+  scrollbar-width: none;
+}
+.market-chips-scroll::-webkit-scrollbar {
+  display: none;
+}
+.market-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #ffffff;
+  border: 1px solid #d1ddc5;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #4a5c43;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .2s ease;
+  flex-shrink: 0;
+}
+.market-chip:hover {
+  border-color: var(--brand);
+  color: var(--green);
+}
+.market-chip.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #172d15;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(153, 194, 41, .25);
+}
+.market-chip__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #879f6b;
+}
+.market-chip.is-active .market-chip__dot {
+  background: #172d15;
+}
+
+.global__layout {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 65px;
+  margin-top: 45px;
+  align-items: start;
+}
+.global__small-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6d8057;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+.market-buttons {
+  display: grid;
+  margin-top: 15px;
+  border-top: 1px solid #d3dcc7;
+}
+.market-buttons > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 46px;
+  padding: 10px 6px 10px 0;
+  border-bottom: 1px solid #d3dcc7;
+  font-size: 13px;
+  background: transparent;
+  color: #77836d;
+  text-align: left;
+  transition: color .2s ease;
+}
+.market-buttons > button > svg {
+  opacity: .3;
+  transition: opacity .2s ease;
+}
+.market-buttons > button.is-active {
+  color: var(--green);
+  font-weight: 600;
+}
+.market-buttons > button.is-active > svg {
+  opacity: 1;
+}
+.market-buttons > button:hover {
+  color: var(--green);
+}
+
+.market-detail {
+  margin-top: 24px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #d7e2cc;
+  border-radius: 6px;
+  min-height: 98px;
+}
+.market-detail__region {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 9px;
+  font-weight: 600;
+  color: #5c7b30;
+  margin-bottom: 4px;
+}
+.market-detail__title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 8px;
+  letter-spacing: -.02em;
+}
+.market-detail > p {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #55664d;
+}
+.global__inquiry-link {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.world-map {
+  position: relative;
+  padding-top: 16px;
+  min-width: 0;
+  color: #d6dfc9;
+}
+.map-svg-wrapper {
+  position: relative;
+  width: 100%;
+}
+.world-map svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  display: block;
+}
+
+/* Connecting flight routes */
+.map-routes {
+  pointer-events: none;
+}
+.map-route-base {
+  fill: none;
+  stroke: #729649;
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  opacity: .28;
+  transition: stroke .25s ease, opacity .25s ease, stroke-width .25s ease;
+}
+.map-route-draw {
+  fill: none;
+  stroke: #7aa34c;
+  stroke-width: 1.1;
+  stroke-linecap: round;
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+  transition: stroke .25s ease, opacity .25s ease, stroke-width .25s ease;
+}
+.world-map.is-in-view .map-route-draw {
+  animation: mapRouteDraw 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.map-route-flow {
+  fill: none;
+  stroke: #a3d464;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-dasharray: 0.12 0.88;
+  stroke-dashoffset: 0;
+  opacity: 0;
+}
+.world-map.is-in-view .map-route-flow {
+  animation: mapRouteFlow 2.8s linear infinite;
+}
+.map-route-group.is-emphasized .map-route-base {
+  stroke: var(--lime);
+  opacity: .75;
+  stroke-width: 1.6;
+}
+.map-route-group.is-emphasized .map-route-draw {
+  stroke: var(--lime);
+  opacity: .95;
+  stroke-width: 1.8;
+  filter: drop-shadow(0 0 3px rgba(140, 198, 63, .45));
+}
+.map-route-group.is-emphasized .map-route-flow {
+  stroke: #ffffff;
+  stroke-width: 2.3;
+  opacity: 1;
+  filter: drop-shadow(0 0 4px #b7d98b);
+}
+
+/* Surat Origin Elements */
+.map-origin__pulse {
+  fill: none;
+  stroke: #e8a933;
+  stroke-width: 1.6;
+  opacity: 0;
+  pointer-events: none;
+}
+.world-map.is-in-view .map-origin__pulse {
+  animation: mapOriginPulse 3s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+.world-map.is-paused .map-route-draw,
+.world-map.is-paused .map-route-flow,
+.world-map.is-paused .map-origin__pulse {
+  animation-play-state: paused !important;
+}
+.map-origin__halo {
+  fill: #faeed4;
+  stroke: #e8a933;
+  stroke-width: 1;
+}
+.map-origin__core {
+  fill: #e8a933;
+}
+.map-origin__text {
+  font-size: 11px;
+  font-weight: 700;
+  fill: white;
+  pointer-events: none;
+}
+
+/* Destination Point Markers */
+.map-marker {
+  cursor: pointer;
+  outline: none;
+}
+.map-marker__hit {
+  fill: transparent;
+}
+.map-marker__halo {
+  fill: #e0eccf;
+  stroke: #b1cb91;
+  stroke-width: 1;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.map-marker__pin {
+  fill: var(--brand);
+  stroke: #ffffff;
+  stroke-width: 1.5;
+  transition: fill .2s, stroke-width .2s, stroke .2s;
+}
+.map-marker.is-active .map-marker__pin,
+.map-marker.is-hovered .map-marker__pin,
+.map-marker:hover .map-marker__pin {
+  fill: var(--green);
+  stroke: var(--brand);
+  stroke-width: 2.2;
+}
+.map-marker.is-active .map-marker__halo,
+.map-marker.is-hovered .map-marker__halo,
+.map-marker:focus-visible .map-marker__halo,
+.map-marker:hover .map-marker__halo {
+  opacity: 1;
+}
+.map-marker:focus-visible .map-marker__halo {
+  stroke: var(--green);
+  stroke-width: 3;
+}
+
+/* Visible SVG Map Pill Badges */
+.map-badge-group {
+  cursor: pointer;
+  outline: none;
+}
+.map-badge-hit {
+  fill: transparent;
+}
+.map-badge-rect {
+  fill: #ffffff;
+  stroke: #c2d2b3;
+  stroke-width: 1.2;
+  filter: drop-shadow(0 2px 5px rgba(36, 61, 46, 0.12));
+  transition: fill .2s ease, stroke .2s ease, filter .2s ease;
+}
+.map-badge-group:hover .map-badge-rect,
+.map-badge-group.is-hovered .map-badge-rect {
+  stroke: var(--brand);
+  fill: #fcfef9;
+}
+.map-badge-group.is-active .map-badge-rect {
+  fill: var(--green);
+  stroke: var(--brand);
+  stroke-width: 1.8;
+  filter: drop-shadow(0 3px 8px rgba(36, 61, 46, 0.3));
+}
+.map-badge-dot {
+  fill: var(--brand);
+  transition: fill .2s ease;
+}
+.map-badge-group.is-active .map-badge-dot {
+  fill: #ffffff;
+}
+.map-badge-text {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  fill: var(--green);
+  pointer-events: none;
+  transition: fill .2s ease;
+}
+.map-badge-group.is-active .map-badge-text {
+  fill: #ffffff;
+}
+
+/* Surat Origin Badge */
+.map-badge-group--origin {
+  cursor: default;
+}
+.map-badge-rect--origin {
+  fill: #e8a933;
+  stroke: #ffffff;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 2px 7px rgba(180, 120, 20, 0.35));
+}
+.map-badge-text--origin {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  fill: #ffffff;
+}
+
+/* Badge Leader Lines */
+.map-badge-leader {
+  stroke: #8fa772;
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+  opacity: 0.6;
+}
+.map-badge-leader.is-active {
+  stroke: var(--lime);
+  stroke-width: 1.5;
+  opacity: 1;
+  stroke-dasharray: none;
+}
+.map-badge-leader--origin {
+  stroke: #d89e2c;
+  stroke-width: 1.2;
+  stroke-dasharray: 2 2;
+  opacity: 0.8;
+}
+
+/* Selected Info Pill on Map Bottom */
+.map-selected {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 13px;
+  margin-top: 24px;
+  margin-left: 2%;
+  color: var(--green);
+}
+.map-g {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 42px;
+  background: var(--green);
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.map-selected > div {
+  display: grid;
+  gap: 2px;
+}
+.map-selected > div > span {
+  font-size: 8px;
+  letter-spacing: .12em;
+  color: #72825f;
+}
+.map-selected strong {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+
+/* Legend & Motion Controls */
+.map-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  color: #617351;
+  font-size: 11px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+.map-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.map-legend__divider {
+  color: #b0c29f;
+}
+.map-motion-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: #ffffff;
+  border: 1px solid #c8d4bd;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .2s ease;
+  line-height: 1;
+}
+.map-motion-toggle:hover {
+  background: #e4ecd9;
+  border-color: var(--green);
+}
+.map-motion-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.map-motion-toggle svg {
+  flex-shrink: 0;
+}
+
+@keyframes mapRouteDraw {
+  0% { stroke-dashoffset: 1; opacity: .2; }
+  30% { opacity: .9; }
+  100% { stroke-dashoffset: 0; opacity: .55; }
+}
+@keyframes mapRouteFlow {
+  0% { stroke-dashoffset: 0; opacity: 0; }
+  12% { opacity: .9; }
+  82% { opacity: .9; }
+  100% { stroke-dashoffset: -1; opacity: 0; }
+}
+@keyframes mapOriginPulse {
+  0% { r: 12px; opacity: .85; }
+  50% { opacity: .35; }
+  100% { r: 34px; opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .global__top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .global__top h2 {
+    font-size: 34px;
+  }
+  .global__intro {
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    padding-bottom: 0;
+  }
+  .market-chips-scroll {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+  .global__layout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 20px;
+  }
+  .global__small-label {
+    display: none;
+  }
+  .market-buttons {
+    display: none;
+  }
+  .global__details {
+    width: 100%;
+    padding-top: 0;
+    border-top: none;
+  }
+  .market-detail {
+    margin-top: 0;
+    padding: 16px 18px;
+    min-height: auto;
+  }
+  .global__inquiry-link {
+    margin-top: 16px;
+  }
+  .world-map {
+    width: 100%;
+    padding-top: 6px;
+  }
+  .map-selected {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .map-g {
+    width: 32px;
+    height: 36px;
+    font-size: 20px;
+  }
+  .map-selected strong {
+    font-size: 14px;
+  }
+}
+
