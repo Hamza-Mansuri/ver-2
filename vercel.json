@@ -1,1 +1,10 @@
-{"buildCommand":"npm run build","outputDirectory":"frontend/dist","rewrites":[{"source":"/((?!assets/|favicon.svg|Gomzi-Company-Profile.pdf).*)","destination":"/index.html"}]}
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
