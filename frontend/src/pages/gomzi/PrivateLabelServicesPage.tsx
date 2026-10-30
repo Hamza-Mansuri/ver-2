@@ -115,7 +115,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
           <div className="gip-split-visual">
             <div className="gip-img-rounded-wrap">
               <img
-                src={asset('quality-assured.webp')}
+                src={asset('NOVEL-MANUFACTURING-PRACTICES.webp')}
                 alt="Quality assured detox supplement bottle range with verified botanical actives"
                 width="729"
                 height="446"
@@ -123,7 +123,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
                 className="gip-feature-photo"
               />
             </div>
-            <p className="gip-caption">CERTIFIED QUALITY ASSURED BOTANICAL FORMULATIONS</p>
+            <p className="gip-caption">INTEGRATED PROCESS TESTING & QUALITY ASSURANCE FLOW</p>
           </div>
           <div className="gip-copy">
             <p className="gip-kicker"><i />QUALITY &amp; COMPLIANCE</p>
@@ -152,7 +152,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
           <div className="gip-split-visual">
             <div className="gip-img-rounded-wrap">
               <img
-                src={asset('NOVEL-MANUFACTURING-PRACTICES.webp')}
+                src={asset('novel-manufacturing-practitioner.webp')}
                 alt="Novel manufacturing practices integrated process flow"
                 width="729"
                 height="446"
@@ -160,7 +160,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
                 className="gip-feature-photo"
               />
             </div>
-            <p className="gip-caption">INTEGRATED FULL-PROCESS MANUFACTURING FLOW</p>
+            <p className="gip-caption">PHARMACEUTICAL-GRADE CAPSULATION & NOVEL MANUFACTURING</p>
           </div>
           <div className="gip-copy">
             <p className="gip-kicker"><i />ADVANCED PRODUCTION</p>
