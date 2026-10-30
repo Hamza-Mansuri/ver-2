@@ -9,6 +9,7 @@ const clientLogos = [
   { name: 'NuroX Nutrition', src: '/assets/logos/NuroX%20Nutrition.png' },
   { name: 'Nx Nutrilabs', src: '/assets/logos/Nx%20Nutrilabs.png' },
   { name: 'Valeo', src: '/assets/logos/Valeo.png' },
+  { name: 'Partner Brand', src: '/assets/logos/logo-black_2.png' },
 ];
 
 const displayLogos = [...clientLogos, ...clientLogos];
