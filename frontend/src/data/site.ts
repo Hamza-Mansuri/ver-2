@@ -4,7 +4,7 @@ export const site = {
   address: '443, 444, 445, 1st Floor, RJD Textile Park, At. Ichchhapor, Hazira Road, Surat - 394510, Gujarat, India.',
   corporateAddress: 'Gaurav Path, Palanpor, Surat - 395009, Gujarat, India.',
   // Add a self-hosted MP4 here when the approved company video is supplied.
-  heroVideo: '/assets/video/hero.mp4', heroPoster: '',
+  heroVideo: '/assets/video/export-video.mp4', heroPoster: '',
   catalogue: '/Gomzi-Company-Profile.pdf',
 };
 export const expertise = [
