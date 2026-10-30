@@ -41,7 +41,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
             <div className="gip-card-frame">
               <div className="gip-card-frame-inner">
                 <img
-                  src={asset('your-private-lael-her.jpg')}
+                  src={asset('your-private-lael-her.webp')}
                   alt="Supplement container with your private label here"
                   width="552"
                   height="620"
@@ -80,7 +80,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
           <div className="gip-split-visual">
             <div className="gip-img-rounded-wrap" style={{ maxWidth: '520px', margin: '0 auto' }}>
               <img
-                src={asset('science-based-product-formulation.jpg')}
+                src={asset('science-based-product-formulation.webp')}
                 alt="Formulation research scientist conducting precision microscopy and analytical formulation in laboratory"
                 width="682"
                 height="1024"
@@ -115,7 +115,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
           <div className="gip-split-visual">
             <div className="gip-img-rounded-wrap">
               <img
-                src={asset('quality-assured.jpg')}
+                src={asset('quality-assured.webp')}
                 alt="Quality assured detox supplement bottle range with verified botanical actives"
                 width="729"
                 height="446"
@@ -152,7 +152,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
           <div className="gip-split-visual">
             <div className="gip-img-rounded-wrap">
               <img
-                src={asset('NOVEL-MANUFACTURING-PRACTICES.jpg')}
+                src={asset('NOVEL-MANUFACTURING-PRACTICES.webp')}
                 alt="Novel manufacturing practices integrated process flow"
                 width="729"
                 height="446"
@@ -186,7 +186,7 @@ export default function PrivateLabelServicesPage({ onInquiry }: PageProps) {
         <div className="container gip-split gip-split-reverse" style={{ alignItems: 'center' }}>
           <div className="gip-split-visual">
             <img
-              src={asset('brand-packaging-design.png')}
+              src={asset('brand-packaging-design.webp')}
               alt="Brand packaging mockups, custom label proofs and brand colour swatches"
               width="1166"
               height="1349"

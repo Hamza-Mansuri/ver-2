@@ -15,7 +15,7 @@ export default function HealthCategoriesPage({ onInquiry }: PageProps) {
           </>
         }
         description="Explore targeted nutrition categories engineered for your brand's next formulation and export conversation."
-        image="health-hero.jpg"
+        image="health-hero.webp"
         position="center 45%"
       />
 

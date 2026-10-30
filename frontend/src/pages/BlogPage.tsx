@@ -34,7 +34,7 @@ export default function BlogPage({ onInquiry }: { onInquiry: () => void }) {
   const [newAuthorName, setNewAuthorName] = useState('');
   const [newAuthorRole, setNewAuthorRole] = useState('Nutraceutical Formulator');
   const [newReadTime, setNewReadTime] = useState('5 min read');
-  const [newCoverImage, setNewCoverImage] = useState('/assets/gomzi-pages/cat-sports.jpg');
+  const [newCoverImage, setNewCoverImage] = useState('/assets/gomzi-pages/cat-sports.webp');
   const [newCoverFile, setNewCoverFile] = useState<File | null>(null);
   const [newExcerpt, setNewExcerpt] = useState('');
   const [newContent, setNewContent] = useState('');
@@ -118,7 +118,7 @@ export default function BlogPage({ onInquiry }: { onInquiry: () => void }) {
     setNewExcerpt('');
     setNewContent('');
     setNewKeyTakeaways('');
-    setNewCoverImage('/assets/gomzi-pages/cat-sports.jpg');
+    setNewCoverImage('/assets/gomzi-pages/cat-sports.webp');
     setNewCoverFile(null);
     setFormError('');
   };
@@ -527,13 +527,13 @@ export default function BlogPage({ onInquiry }: { onInquiry: () => void }) {
                   value={newCoverImage}
                   onChange={(e) => setNewCoverImage(e.target.value)}
                 >
-                  <option value="/assets/gomzi-pages/cat-sports.jpg">Sports Nutrition & Whey (/cat-sports.jpg)</option>
-                  <option value="/assets/gomzi-pages/cat-child.jpg">Child & Gummies (/cat-child.jpg)</option>
-                  <option value="/assets/gomzi-pages/cat-immune.jpg">Immune & Effervescent (/cat-immune.jpg)</option>
-                  <option value="/assets/solutions/global-export.jpg">Global Export Port (/global-export.jpg)</option>
-                  <option value="/assets/solutions/solutions-premix.jpg">Premix Blending (/solutions-premix.jpg)</option>
-                  <option value="/assets/solutions/solutions-packaging.jpg">Packaging Line (/solutions-packaging.jpg)</option>
-                  <option value="/assets/gomzi-pages/cat-gut.jpg">Gut Health (/cat-gut.jpg)</option>
+                  <option value="/assets/gomzi-pages/cat-sports.webp">Sports Nutrition & Whey (/cat-sports.webp)</option>
+                  <option value="/assets/gomzi-pages/cat-child.webp">Child & Gummies (/cat-child.webp)</option>
+                  <option value="/assets/gomzi-pages/cat-immune.webp">Immune & Effervescent (/cat-immune.webp)</option>
+                  <option value="/assets/solutions/global-export.webp">Global Export Port (/global-export.webp)</option>
+                  <option value="/assets/solutions/solutions-premix.webp">Premix Blending (/solutions-premix.webp)</option>
+                  <option value="/assets/solutions/solutions-packaging.webp">Packaging Line (/solutions-packaging.webp)</option>
+                  <option value="/assets/gomzi-pages/cat-gut.webp">Gut Health (/cat-gut.webp)</option>
                 </select>
               </div>
 

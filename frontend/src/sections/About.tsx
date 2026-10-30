@@ -101,7 +101,7 @@ export default function About() {
 
         <div className="about-visual">
           <img
-            src="/assets/images/indian-scientist-generated.png"
+            src="/assets/images/indian-scientist-generated.webp"
             width="1024"
             height="682"
             loading="lazy"

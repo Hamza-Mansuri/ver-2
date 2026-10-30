@@ -22,7 +22,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Formulation & development',
     tag: 'THE SCIENCE',
     tagline: 'Thoughtful formulations shaped around your product, audience, and destination market.',
-    image: '/assets/solutions/formulation.jpg',
+    image: '/assets/solutions/formulation.webp',
     alt: 'Gloved laboratory worker preparing capsules',
     overview: 'Our in-house R&D and formulation team crafts precision nutraceutical recipes tailored to your brand identity, bioavailability criteria, and statutory limits. From taste masking and active ingredient stability to microencapsulation, we transform raw concepts into scalable, market-ready products.',
     highlights: [
@@ -61,7 +61,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Private-label manufacturing',
     tag: 'YOUR BRAND',
     tagline: 'Nutraceutical formats developed and manufactured around your brand’s exact commercial requirements.',
-    image: '/assets/solutions/manufacturing.jpg',
+    image: '/assets/solutions/manufacturing.webp',
     alt: 'Capsules being prepared in a laboratory',
     overview: 'State-of-the-art cleanroom manufacturing infrastructure in Surat, Gujarat. Equipped with automated high-speed tablet presses, automated capsule fillers, blister lines, and powder blending suites, we execute high-volume contracts with strict batch-to-batch repeatability.',
     highlights: [
@@ -100,7 +100,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Export planning & documentation',
     tag: 'MARKET READINESS',
     tagline: 'Packaging, labelling, and supporting documentation engineered for your destination market.',
-    image: '/assets/solutions/global-export.jpg',
+    image: '/assets/solutions/global-export.webp',
     alt: 'Aerial view of shipping containers at a seaport',
     overview: 'Expanding into overseas markets requires technical regulatory finesse. Gomzi Life Science guides brands through international nutraceutical compliance, including harmonised tariff classification, Certificates of Free Sale (CFS), Halal certification, and Country-of-Origin documentation.',
     highlights: [
@@ -139,7 +139,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Dispatch coordination',
     tag: 'THE NEXT CHAPTER',
     tagline: 'Coordinated handover from finished pallets to your designated global freight and shipping partners.',
-    image: '/assets/solutions/logistics.jpg',
+    image: '/assets/solutions/logistics.webp',
     alt: 'Cargo containers and cranes at an international port',
     overview: 'Strategic proximity to Hazira Port, Nhava Sheva (JNPT) Mumbai, and international cargo airports gives Gomzi Life Science a distinct logistical edge. We manage container stuffings, palletised air cargo, refrigerated shipments, and seamless port handovers.',
     highlights: [
@@ -178,7 +178,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Analytical testing & quality assurance',
     tag: 'ANALYTICAL RIGOR',
     tagline: 'Rigorous in-house HPLC assays, microbial screening, heavy metal testing, and batch COA validation.',
-    image: '/assets/solutions/solutions-quality.jpg',
+    image: '/assets/solutions/solutions-quality.webp',
     alt: 'Analytical chemist conducting quality testing with lab equipment',
     overview: 'Quality is non-negotiable in nutraceutical manufacturing. Our in-house analytical testing laboratories perform multi-stage quality control from raw material release to finished batch stability, ensuring complete chemical, physical, and microbiological integrity.',
     highlights: [
@@ -217,7 +217,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Custom premix & microencapsulation',
     tag: 'ADVANCED FORMULATION',
     tagline: 'High-homogeneity vitamin, mineral, and botanical premixes engineered for maximum bioavailability.',
-    image: '/assets/solutions/solutions-premix.jpg',
+    image: '/assets/solutions/solutions-premix.webp',
     alt: 'Precision microencapsulated nutrient granules and premix blending',
     overview: 'Delivering micro-nutrients with pinpoint accuracy requires advanced powder technology. Gomzi Life Science specialises in customized premixes and microencapsulation, shielding vulnerable vitamins from moisture, heat, and gastric breakdown.',
     highlights: [
@@ -256,7 +256,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Regulatory dossiers & global compliance',
     tag: 'GLOBAL COMPLIANCE',
     tagline: 'Turnkey technical documentation, stability studies, and registration dossiers tailored for your target export region.',
-    image: '/assets/solutions/solutions-regulatory.jpg',
+    image: '/assets/solutions/solutions-regulatory.webp',
     alt: 'International regulatory compliance and export documentation dossiers',
     overview: 'Navigating international health authorities requires meticulous documentation. Our regulatory affairs team prepares complete technical dossiers that clear ministerial scrutiny across the GCC, Southeast Asia, East Africa, Central Asia, and the Americas.',
     highlights: [
@@ -295,7 +295,7 @@ export const solutionsData: SolutionDetail[] = [
     title: 'Custom packaging & brand presentation',
     tag: 'BRAND EXCELLENCE',
     tagline: 'Versatile packaging formats including HDPE bottles, blister packs, sachets, stick packs, and luxury cartons.',
-    image: '/assets/solutions/solutions-packaging.jpg',
+    image: '/assets/solutions/solutions-packaging.webp',
     alt: 'Premium nutraceutical bottles, blister packs, jars and stand-up pouches',
     overview: 'Your packaging is the first physical interaction a customer has with your brand. We offer premium container selection, induction sealing, tamper-evident neck bands, metallised sachet foil printing, and high-impact outer retail cartons.',
     highlights: [

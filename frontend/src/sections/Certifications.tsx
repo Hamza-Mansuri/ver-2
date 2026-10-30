@@ -21,23 +21,16 @@ export default function Certifications() {
                 width="96"
                 height="96"
                 loading="lazy"
-                alt={`${c.name} profile mark`}
+                alt={`${c.name} certification mark`}
+                onError={(e) => {
+                  if (c.id === 'gpsr') {
+                    (e.target as HTMLImageElement).src = '/assets/certifications/gpsr.svg';
+                  }
+                }}
               />
               <figcaption>{c.name}</figcaption>
             </figure>
           ))}
-          <figure className="gpsr-mark">
-            <img
-              src="/assets/certifications/gpsr-placeholder.svg"
-              width="96"
-              height="96"
-              loading="lazy"
-              alt="GPSR artwork placeholder, certificate artwork pending"
-            />
-            <figcaption>
-              GPSR <small>Artwork pending</small>
-            </figcaption>
-          </figure>
         </div>
       </div>
     </section>

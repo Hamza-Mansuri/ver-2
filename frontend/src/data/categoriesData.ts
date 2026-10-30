@@ -19,7 +19,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '01',
     title: 'Hair, Skin & Nails',
     tagline: 'Collagen peptides, pharmaceutical-grade biotin, and cellular radiant beauty nutrition.',
-    image: '/assets/gomzi-pages/cat-skin.jpg',
+    image: '/assets/gomzi-pages/cat-skin.webp',
     overview: 'The nutricosmetics and ingestible beauty sector demands bioactive collagen peptides, botanical antioxidants, and vital cofactors that nourish dermis, hair follicles, and nail beds from within. We formulate bioavailable beauty supplements designed for visible consumer efficacy.',
     keyIngredients: [
       { name: 'Hydrolyzed Marine Collagen Peptides', benefit: 'Type I & III low-molecular-weight peptides for dermal elasticity and collagen matrix density.' },
@@ -60,7 +60,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '02',
     title: 'Heart Health',
     tagline: 'Cardiovascular wellness concepts powered by CoQ10, omega-3s, and arterial antioxidants.',
-    image: '/assets/gomzi-pages/cat-heart.jpg',
+    image: '/assets/gomzi-pages/cat-heart.webp',
     overview: 'Targeted cardiovascular wellness is essential for healthy longevity. Our heart formulations combine cellular energy catalysts like CoQ10, fermented red yeast rice, botanical polyphenols, and microencapsulated phytosterols to support arterial elasticity, healthy blood lipids, and optimal cardiac muscle function.',
     keyIngredients: [
       { name: 'Ubiquinone & Ubiquinol (CoQ10)', benefit: 'Vital cellular bioenergetics catalyst supporting mitochondrial ATP in cardiac tissue.' },
@@ -100,7 +100,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '03',
     title: 'Child Nutrition',
     tagline: 'Pediatric gummies, multivitamin syrups, and age-tailored growth formulations.',
-    image: '/assets/gomzi-pages/cat-child.jpg',
+    image: '/assets/gomzi-pages/cat-child.webp',
     overview: 'Children require precision nutrient balances wrapped in delightful, clean-label formats they love taking daily. We formulate pediatrician-approved growth formulas, brain-supporting DHA gummies, and immune shields using natural fruit juices and zero artificial colorants.',
     keyIngredients: [
       { name: 'Algal DHA (Docosahexaenoic Acid)', benefit: 'Vegetarian omega-3 essential for early childhood retinal and cognitive synaptic development.' },
@@ -140,7 +140,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '04',
     title: 'Body Detox',
     tagline: 'Botanical detoxifiers, spirulina, milk thistle, and cellular liver cleanse complexes.',
-    image: '/assets/gomzi-pages/cat-detox.jpg',
+    image: '/assets/gomzi-pages/cat-detox.webp',
     overview: 'Modern lifestyle stresses, processed diets, and environmental toxins tax natural filtration organs. Our detoxification and liver support formulations activate Phase I and Phase II hepatic detoxification enzymes, flush metabolic waste, and neutralize oxidative stress.',
     keyIngredients: [
       { name: 'Standardized Milk Thistle (80% Silymarin)', benefit: 'Regenerates hepatocytes and stimulates hepatic protein synthesis against toxin insult.' },
@@ -180,7 +180,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '05',
     title: 'Joint Health',
     tagline: 'Glucosamine, MSM, chondroitin, and mobile cartilage rejuvenation for active living.',
-    image: '/assets/gomzi-pages/cat-joint.jpg',
+    image: '/assets/gomzi-pages/cat-joint.webp',
     overview: 'From aging seniors to high-performance athletes, joint cartilage and synovial fluid need specialized structural precursors. Our joint and mobility formulations combine fast-acting botanical anti-inflammatories like Boswellia and curcumin with restorative chondroprotective glycosaminoglycans.',
     keyIngredients: [
       { name: 'Glucosamine Sulfate Potassium Salt', benefit: 'Essential building block for cartilage proteoglycans and synovial fluid replenishment.' },
@@ -220,7 +220,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '06',
     title: 'Women’s Health',
     tagline: 'Targeted nutrition for hormonal balance, iron vitality, prenatal care, and active menopause.',
-    image: '/assets/gomzi-pages/cat-women.jpg',
+    image: '/assets/gomzi-pages/cat-women.webp',
     overview: 'Women experience distinct physiological transitions throughout life—from menstrual regularity and fertility to pregnancy, postpartum recovery, and menopause. Our women’s health portfolio provides hormone-modulating botanicals, gentle chelated iron, and methylated folates.',
     keyIngredients: [
       { name: 'Myo-Inositol & D-Chiro-Inositol (40:1)', benefit: 'Restores ovarian insulin sensitivity and regular ovulatory cycles in PCOS management.' },
@@ -260,7 +260,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '07',
     title: 'Men’s Health',
     tagline: 'Performance vitality, zinc-magnesium complexes, prostate care, and stamina support.',
-    image: '/assets/gomzi-pages/cat-men.jpg',
+    image: '/assets/gomzi-pages/cat-men.webp',
     overview: 'Men face specific wellness challenges surrounding testosterone optimization, prostate health, cardiovascular stamina, and physical vitality. We formulate high-potency male wellness products integrating clinically studied botanicals like ashwagandha, shilajit, saw palmetto, and zinc-magnesium complexes.',
     keyIngredients: [
       { name: 'Purified Shilajit (50% Fulvic Acid)', benefit: 'Rich in 84+ ionic trace minerals, enhances cellular ATP and supports free testosterone.' },
@@ -300,7 +300,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '08',
     title: 'Brain Health',
     tagline: 'Nootropic botanicals, ashwagandha, brahmi, and cognitive focus formulations.',
-    image: '/assets/gomzi-pages/cat-brain.jpg',
+    image: '/assets/gomzi-pages/cat-brain.webp',
     overview: 'In an era of cognitive overload and demanding work schedules, consumers seek sustained mental focus, working memory, and mental clarity without nervous caffeine jitters. We formulate neuroprotective nootropics, cholinergic brain supplements, and adaptogenic memory enhancers.',
     keyIngredients: [
       { name: 'Bacopa Monnieri (50% Bacosides)', benefit: 'Traditional Brahmi enhancing synaptic transmission and spatial working memory.' },
@@ -340,7 +340,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '09',
     title: 'Weight Management',
     tagline: 'Metabolic support, Garcinia cambogia, green tea, and balanced energy nutrition.',
-    image: '/assets/gomzi-pages/cat-weight.jpg',
+    image: '/assets/gomzi-pages/cat-weight.webp',
     overview: 'Healthy weight management combines appetite satiety, thermogenic calorie expenditure, and metabolic carbohydrate balance. We formulate science-backed weight wellness products incorporating EGCG green tea extracts, Garcinia HCA, dietary fibers, and thermogenic lipotropic compounds.',
     keyIngredients: [
       { name: 'Garcinia Cambogia (60% Hydroxycitric Acid)', benefit: 'Inhibits ATP-citrate lyase, an enzyme crucial for fatty acid synthesis from dietary carbs.' },
@@ -380,7 +380,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '10',
     title: 'Immune Health',
     tagline: 'High-potency vitamin C, zinc, elderberry, and seasonal cellular defense complexes.',
-    image: '/assets/gomzi-pages/cat-immune.jpg',
+    image: '/assets/gomzi-pages/cat-immune.webp',
     overview: 'Immune resilience is a year-round priority for modern consumers. Our immune defense portfolio spans buffered vitamin C, liposomal complexes, black elderberry, medicinal mushrooms, and bioactive zinc bisglycinate that strengthen innate and adaptive immune cell activity.',
     keyIngredients: [
       { name: 'Ester-C® / Calcium Ascorbate', benefit: 'Non-acidic, gentle vitamin C retained in white blood cells longer than standard ascorbic acid.' },
@@ -420,7 +420,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '11',
     title: 'Sleep Management',
     tagline: 'Restorative evening formulations with melatonin, chamomile, and magnesium bisglycinate.',
-    image: '/assets/gomzi-pages/cat-sleep.jpg',
+    image: '/assets/gomzi-pages/cat-sleep.webp',
     overview: 'Sleep deprivation impairs immunity, cognition, and physical recovery. Our restorative sleep formulations promote natural GABA synthesis, calm hyperactive neurological states, and regulate the circadian rhythm without morning grogginess or dependency.',
     keyIngredients: [
       { name: 'Pharmaceutical-Grade Melatonin', benefit: 'Calibrated micro-dosing (1mg to 5mg) signaling sleep onset and re-aligning circadian rhythms.' },
@@ -460,7 +460,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '12',
     title: 'Multivitamins',
     tagline: 'Comprehensive daily micronutrient profiles spanning chewable, tablet, and liquid formats.',
-    image: '/assets/gomzi-pages/cat-multivitamin.jpg',
+    image: '/assets/gomzi-pages/cat-multivitamin.webp',
     overview: 'The foundation of nutritional wellness. Our full-spectrum multivitamin complexes provide 100% or greater RDA of essential vitamins, chelated trace minerals, antioxidant cofactors, and botanical bio-enhancers tailored by age, gender, and lifestyle.',
     keyIngredients: [
       { name: 'Active B-Complex (B1, B2, B3, B5, B6, B12)', benefit: 'Methylated and coenzymated forms (Methylcobalamin, P-5-P) supporting cellular ATP production.' },
@@ -500,7 +500,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '13',
     title: 'Sugar Management',
     tagline: 'Blood glucose balance formulations with berberine, cinnamon extract, and chromium.',
-    image: '/assets/gomzi-pages/cat-sugar.jpg',
+    image: '/assets/gomzi-pages/cat-sugar.webp',
     overview: 'With the worldwide rise of metabolic syndrome and insulin resistance, consumers are actively managing blood glucose curves. We formulate clinically driven botanical glucose control products utilizing berberine, standardized cinnamon, gymnema sylvestre, and chromium.',
     keyIngredients: [
       { name: 'Berberine HCl 97% (Berberis Aristata)', benefit: 'Activates AMP-activated protein kinase (AMPK), the body’s master metabolic switch, enhancing glucose uptake.' },
@@ -540,7 +540,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '14',
     title: 'Superfoods',
     tagline: 'Concentrated greens, moringa, spirulina, and nutrient-dense raw plant complexes.',
-    image: '/assets/gomzi-pages/cat-superfood.jpg',
+    image: '/assets/gomzi-pages/cat-superfood.webp',
     overview: 'Modern consumers want whole-food nourishment from organic, nutrient-dense botanicals. Our superfood blends combine cold-milled spirulina, moringa leaf, organic wheatgrass, antioxidant berries, and digestive enzyme cofactors into delicious daily alkalizing greens powders.',
     keyIngredients: [
       { name: 'Organic Moringa Oleifera Leaf Powder', benefit: 'Rich in 90+ nutrients, 46 antioxidants, and essential plant amino acids.' },
@@ -580,7 +580,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '15',
     title: 'Sports Nutrition',
     tagline: 'Whey protein isolates, fermented BCAAs, creatine monohydrate, and pre-workout formulas.',
-    image: '/assets/gomzi-pages/cat-sports.jpg',
+    image: '/assets/gomzi-pages/cat-sports.webp',
     overview: 'Athletic performance demands uncompromising ingredient purity, verified macro ratios, and instant solubility. We engineer high-purity Whey Protein Isolates (WPI), Whey Protein Concentrates (WPC), Micronized Creatine, and explosive pre-workout formulations trusted by fitness brands worldwide.',
     keyIngredients: [
       { name: 'Cross-Flow Microfiltered Whey Protein Isolate (90%)', benefit: 'Ultra-pure protein with minimal fat and lactose, promoting rapid post-exercise muscle protein synthesis.' },
@@ -621,7 +621,7 @@ export const categoriesData: HealthCategoryDetail[] = [
     number: '16',
     title: 'Gut Health',
     tagline: 'Multi-strain spore probiotics, prebiotic fibers, and comprehensive digestive enzyme complexes.',
-    image: '/assets/gomzi-pages/cat-gut.jpg',
+    image: '/assets/gomzi-pages/cat-gut.webp',
     overview: 'The gut microbiome is the master conductor of human immunity, mental clarity, and metabolic vitality. We formulate resilient multi-strain probiotics, spore-forming stable cultures, digestive enzyme spectrums, and prebiotic fiber matrices that survive stomach acid to flourish in the colon.',
     keyIngredients: [
       { name: 'Spore-Forming Bacillus Coagulans & Subtilis', benefit: 'Extremely resilient spore probiotics surviving harsh gastric acidity and high heat storage.' },

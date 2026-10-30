@@ -15,4 +15,5 @@ export const certifications = [
   { id: 'shefexil', name: 'SHEFEXIL', descriptor: 'Export council' },
   { id: 'kosher', name: 'KOSHER', descriptor: 'Profile mark' },
   { id: 'sgcci', name: 'SGCCI', descriptor: 'Chamber of commerce' },
+  { id: 'gpsr', name: 'GPSR', descriptor: 'EU Product Safety' },
 ];

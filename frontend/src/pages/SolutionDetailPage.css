@@ -9,7 +9,7 @@
 
 .sd-hero {
   background: #1c3426;
-  background-image: linear-gradient(135deg, rgba(20, 38, 28, 0.94) 0%, rgba(28, 52, 38, 0.88) 100%), url('/assets/solutions/solutions-hero.jpg');
+  background-image: linear-gradient(135deg, rgba(20, 38, 28, 0.94) 0%, rgba(28, 52, 38, 0.88) 100%), url('/assets/solutions/solutions-hero.webp');
   background-size: cover;
   background-position: center;
   color: #ffffff;

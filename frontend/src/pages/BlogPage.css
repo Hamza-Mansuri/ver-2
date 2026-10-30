@@ -11,7 +11,7 @@
 /* Hub Hero */
 .bh-hero {
   background: #1b3224;
-  background-image: linear-gradient(135deg, rgba(20, 36, 26, 0.95) 0%, rgba(27, 50, 36, 0.88) 100%), url('/assets/gomzi-pages/cat-sports.jpg');
+  background-image: linear-gradient(135deg, rgba(20, 36, 26, 0.95) 0%, rgba(27, 50, 36, 0.88) 100%), url('/assets/gomzi-pages/cat-sports.webp');
   background-size: cover;
   background-position: center 30%;
   color: #ffffff;
@@ -606,7 +606,7 @@
    ========================================= */
 .br-hero {
   background: #172c20;
-  background-image: linear-gradient(135deg, rgba(16, 32, 22, 0.96) 0%, rgba(25, 48, 34, 0.9) 100%), url('/assets/gomzi-pages/cat-sports.jpg');
+  background-image: linear-gradient(135deg, rgba(16, 32, 22, 0.96) 0%, rgba(25, 48, 34, 0.9) 100%), url('/assets/gomzi-pages/cat-sports.webp');
   background-size: cover;
   background-position: center;
   color: #ffffff;

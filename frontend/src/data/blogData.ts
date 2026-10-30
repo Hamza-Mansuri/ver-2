@@ -38,7 +38,7 @@ export const defaultBlogs: BlogPost[] = [
     },
     date: 'October 24, 2026',
     readTime: '6 min read',
-    coverImage: '/assets/gomzi-pages/cat-sports.jpg',
+    coverImage: '/assets/gomzi-pages/cat-sports.webp',
     excerpt: 'How temperature, instantization, and protein cross-flow microfiltration impact shelf-life, solubility, and flavor retention across Middle Eastern and Southeast Asian export corridors.',
     content: [
       'In global sports nutrition, Whey Protein Isolate (WPI 90%) and Whey Protein Concentrate (WPC 80%) remain the primary benchmarks of athletic protein supplementation. However, contract manufacturers formulating for export across tropical destinations like the GCC, Southeast Asia, and Central Africa face severe physical challenges: high humidity, temperature spikes during sea transit, and potential Maillard reaction browning.',
@@ -64,7 +64,7 @@ export const defaultBlogs: BlogPost[] = [
     },
     date: 'October 18, 2026',
     readTime: '5 min read',
-    coverImage: '/assets/gomzi-pages/cat-child.jpg',
+    coverImage: '/assets/gomzi-pages/cat-child.webp',
     excerpt: 'Why 100% citrus pectin gummies are rapidly replacing traditional bovine gelatin in international markets—delivering 45°C thermal stability, Halal compliance, and superior active retention.',
     content: [
       'Nutraceutical gummies have evolved from a novelty children’s candy into the dominant delivery format for adult multivitamins, sleep aids, hair beauty collagen, and apple cider vinegar. However, international export of gummy supplements presents a critical physical limitation: standard bovine or porcine gelatin melts at approximately 32°C to 35°C, resulting in melted blocks of jelly inside shipping containers or retail shelves.',
@@ -90,7 +90,7 @@ export const defaultBlogs: BlogPost[] = [
     },
     date: 'October 12, 2026',
     readTime: '8 min read',
-    coverImage: '/assets/solutions/global-export.jpg',
+    coverImage: '/assets/solutions/global-export.webp',
     excerpt: 'An insider look into Common Technical Dossier (CTD) compilation, stability zone IVb testing, Certificate of Free Sale (CFS), and clearing international health authority audits.',
     content: [
       'India has rapidly ascended as one of the world’s foremost contract manufacturing powerhouses for dietary supplements and functional foods. However, moving beyond domestic commerce into tier-1 export markets requires an exacting understanding of foreign health authority frameworks—from US FDA 21 CFR Part 111 and EU Directive 2002/46/EC to GCC GSO 2233 standards.',
@@ -116,7 +116,7 @@ export const defaultBlogs: BlogPost[] = [
     },
     date: 'October 05, 2026',
     readTime: '5 min read',
-    coverImage: '/assets/gomzi-pages/cat-immune.jpg',
+    coverImage: '/assets/gomzi-pages/cat-immune.webp',
     excerpt: 'Why modern supplement brands are pivoting toward portable stick packs and effervescent fizz tablets that combine active micronutrient delivery with refreshing hydration.',
     content: [
       'Consumer fatigue with large, hard-to-swallow synthetic tablets has fueled exponential demand for experiential, drinkable supplement formats. Two formats leading this revolution are effervescent hydration tablets and ultra-portable single-serve stick packs.',
@@ -142,7 +142,7 @@ export const defaultBlogs: BlogPost[] = [
     },
     date: 'September 28, 2026',
     readTime: '7 min read',
-    coverImage: '/assets/solutions/solutions-premix.jpg',
+    coverImage: '/assets/solutions/solutions-premix.webp',
     excerpt: 'Shielding vulnerable fat-soluble vitamins (A, D3, K2), probiotics, and bitter botanical polyphenols from moisture, heat, and oxygen degradation using precision lipid coating.',
     content: [
       'In functional food fortification and dietary supplement manufacturing, formulation scientists frequently face a harsh reality: the most potent biological actives are often the most fragile. Fat-soluble vitamins such as Vitamin D3 and Vitamin K2-MK7, live probiotic cultures, and botanical polyphenols degrade rapidly when exposed to atmospheric oxygen, ambient moisture, or mineral cross-reactions.',
@@ -168,7 +168,7 @@ export const defaultBlogs: BlogPost[] = [
     },
     date: 'September 20, 2026',
     readTime: '6 min read',
-    coverImage: '/assets/solutions/solutions-packaging.jpg',
+    coverImage: '/assets/solutions/solutions-packaging.webp',
     excerpt: 'Evaluating oxygen transmission rates (OTR), water vapor transmission rates (WVTR), ocean freight cube optimization, and recyclable PCR materials for modern wellness brands.',
     content: [
       'For decades, heavy rigid plastic HDPE canisters were the ubiquitous standard for protein powders and meal replacements. However, skyrocketing international ocean freight rates and heightened consumer environmental awareness are driving a massive transformation in nutraceutical primary packaging.',
