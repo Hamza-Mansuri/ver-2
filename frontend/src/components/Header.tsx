@@ -31,14 +31,14 @@ export default function Header({ onInquiry: _onInquiry }: { onInquiry?: () => vo
       const currentScrollY = window.scrollY;
       const delta = currentScrollY - lastScrollY.current;
 
-      if (currentScrollY <= 80 || mobile) {
+      if (currentScrollY <= 10 || mobile) {
         setVisible(true);
-      } else if (delta > 10) {
-        // Scrolling down past threshold
+      } else if (delta > 5) {
+        // Scrolling down even slightly
         setVisible(false);
         setSub(false);
-      } else if (delta < -10) {
-        // Scrolling up past threshold
+      } else if (delta < -5) {
+        // Scrolling up
         setVisible(true);
       }
 
@@ -86,6 +86,9 @@ export default function Header({ onInquiry: _onInquiry }: { onInquiry?: () => vo
           {mobile ? <X /> : <Menu />}
         </button>
         <nav id="main-nav" className={mobile ? 'main-nav is-open' : 'main-nav'} aria-label="Main navigation">
+          <NavLink key="home" to="/" className="home-tab" onClick={() => { setSub(false); setMobile(false); }}>
+            Home
+          </NavLink>
           {navigation.map(item =>
             item.path === '/expertise' ? (
               <div

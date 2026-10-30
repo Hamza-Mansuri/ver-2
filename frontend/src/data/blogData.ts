@@ -210,3 +210,4 @@ export function saveStoredBlog(post: BlogPost): BlogPost[] {
     return defaultBlogs;
   }
 }
+

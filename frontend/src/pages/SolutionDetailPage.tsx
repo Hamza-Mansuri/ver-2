@@ -188,3 +188,4 @@ export default function SolutionDetailPage({ onInquiry }: { onInquiry: () => voi
     </main>
   );
 }
+

@@ -1,4 +1,4 @@
-import { useState, useMemo, type FormEvent } from 'react';
+import { useState, useMemo, type FormEvent, type ChangeEvent } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { 
   ArrowLeft, 
@@ -35,6 +35,7 @@ export default function BlogPage({ onInquiry }: { onInquiry: () => void }) {
   const [newAuthorRole, setNewAuthorRole] = useState('Nutraceutical Formulator');
   const [newReadTime, setNewReadTime] = useState('5 min read');
   const [newCoverImage, setNewCoverImage] = useState('/assets/gomzi-pages/cat-sports.jpg');
+  const [newCoverFile, setNewCoverFile] = useState<File | null>(null);
   const [newExcerpt, setNewExcerpt] = useState('');
   const [newContent, setNewContent] = useState('');
   const [newKeyTakeaways, setNewKeyTakeaways] = useState('');
@@ -117,6 +118,20 @@ export default function BlogPage({ onInquiry }: { onInquiry: () => void }) {
     setNewExcerpt('');
     setNewContent('');
     setNewKeyTakeaways('');
+    setNewCoverImage('/assets/gomzi-pages/cat-sports.jpg');
+    setNewCoverFile(null);
+    setFormError('');
+  };
+
+  const handleCoverChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] ?? null;
+    if (!file) return;
+    if (!file.type.startsWith('image/')) {
+      setFormError('Please upload an image file (JPG, PNG, WEBP).');
+      return;
+    }
+    setNewCoverFile(file);
+    setNewCoverImage(URL.createObjectURL(file));
     setFormError('');
   };
 
@@ -522,6 +537,29 @@ export default function BlogPage({ onInquiry }: { onInquiry: () => void }) {
                 </select>
               </div>
 
+              <div className="bh-form-group bh-file-upload">
+                <label htmlFor="blog-cover-file">Cover Image (Upload)</label>
+                <input
+                  id="blog-cover-file"
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp"
+                  className="bh-file-input"
+                  onChange={handleCoverChange}
+                />
+                <label className="bh-file-label" htmlFor="blog-cover-file">
+                  {newCoverFile ? (
+                    <>
+                      <span style={{ color: '#172c20', fontWeight: 600 }}>{newCoverFile.name}</span>
+                    </>
+                  ) : (
+                    <>
+                      <Plus size={14} /> Choose a cover image
+                    </>
+                  )}
+                </label>
+                {newCoverFile && <span className="bh-file-name">{newCoverFile.name} ({Math.round(newCoverFile.size / 1024)} KB)</span>}
+              </div>
+
               <div className="bh-form-group">
                 <label htmlFor="blog-excerpt">Summary / Excerpt *</label>
                 <textarea
@@ -590,3 +628,4 @@ export default function BlogPage({ onInquiry }: { onInquiry: () => void }) {
     </main>
   );
 }
+
