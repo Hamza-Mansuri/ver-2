@@ -13,6 +13,9 @@ import Clients from './sections/Clients';
 import Process from './sections/Process';
 import ContentPage from './pages/ContentPage';
 import SolutionsPage from './pages/SolutionsPage';
+import SolutionDetailPage from './pages/SolutionDetailPage';
+import CategoryDetailPage from './pages/CategoryDetailPage';
+import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import DownloadCataloguesPage from './pages/DownloadCataloguesPage';
 import { gomziPageRegistry } from './pages/gomzi/pageRegistry';
@@ -27,9 +30,17 @@ function Site() {
   useEffect(() => {
     window.scrollTo(0, 0);
     const page = routePages.find(p => p.path === location.pathname);
-    document.title = page
-      ? `${page.title} | Gomzi Life Science`
-      : 'Gomzi Life Science | Nutraceutical Manufacturing & Export';
+    if (page) {
+      document.title = `${page.title} | Gomzi Life Science`;
+    } else if (location.pathname.startsWith('/solutions/')) {
+      document.title = 'Solution Details | Gomzi Life Science';
+    } else if (location.pathname.startsWith('/health-categories/')) {
+      document.title = 'Health Category Details | Gomzi Life Science';
+    } else if (location.pathname.startsWith('/blog/')) {
+      document.title = 'Article | Gomzi Knowledge Hub';
+    } else {
+      document.title = 'Gomzi Life Science | Nutraceutical Manufacturing & Export';
+    }
   }, [location.pathname]);
 
   const open = () => setInquiry(true);
@@ -57,6 +68,11 @@ function Site() {
             </main>
           }
         />
+        {/* Detail and Specialized Hub Routes */}
+        <Route path="/solutions/:slug" element={<SolutionDetailPage onInquiry={open} />} />
+        <Route path="/health-categories/:slug" element={<CategoryDetailPage onInquiry={open} />} />
+        <Route path="/blog/:slug" element={<BlogPage onInquiry={open} />} />
+
         {routePages.map(page => {
           const GomziPage = gomziPageRegistry[page.path];
           return (
@@ -72,6 +88,8 @@ function Site() {
                   <ContactPage onInquiry={open} />
                 ) : page.path === '/download-catalogues' ? (
                   <DownloadCataloguesPage onInquiry={open} />
+                ) : page.path === '/blog' ? (
+                  <BlogPage onInquiry={open} />
                 ) : (
                   <ContentPage {...page} onInquiry={open} />
                 )

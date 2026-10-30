@@ -24,11 +24,14 @@
 .gomzi-solutions .gs-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
 .gomzi-solutions .gs-card:hover .gs-card-image img{transform:scale(1.045)}
 .gomzi-solutions .gs-card-number{position:absolute;left:15px;top:15px;background:#fcfcf9ed;color:var(--gs-forest);font-size:10px;font-weight:500;width:34px;height:34px;display:grid;place-items:center;border-radius:50%}
+.gomzi-solutions .gs-card-image-link{display:block;text-decoration:none}
 .gomzi-solutions .gs-card-body{padding:25px 22px 18px;flex:1;display:flex;flex-direction:column}
 .gomzi-solutions .gs-card-tag{font-size:8px;font-weight:600;letter-spacing:.14em;color:#6b7c57;margin-bottom:13px}
 .gomzi-solutions .gs-card h3{font-size:22px;font-weight:500;letter-spacing:-.035em;line-height:1.2;margin:0 0 15px}
+.gomzi-solutions .gs-card h3 a{color:inherit;text-decoration:none;transition:color .2s}
+.gomzi-solutions .gs-card h3 a:hover{color:#56751b}
 .gomzi-solutions .gs-card p{font-size:12px;line-height:1.8;color:#637061;margin:0 0 28px}
-.gomzi-solutions .gs-card-action{display:flex;align-items:center;justify-content:space-between;gap:10px;background:transparent;border:0;border-top:1px solid #d6dfcd;margin-top:auto;padding:16px 0 0;color:var(--gs-forest);font-size:10px;font-weight:500;text-align:left;min-height:42px}
+.gomzi-solutions .gs-card-action{display:flex;align-items:center;justify-content:space-between;gap:10px;background:transparent;border:0;border-top:1px solid #d6dfcd;margin-top:auto;padding:16px 0 0;color:var(--gs-forest);font-size:11px;font-weight:500;text-align:left;min-height:42px;text-decoration:none;transition:color .2s}
 .gomzi-solutions .gs-card-action:hover{color:#56751b}
 .gomzi-solutions .gs-note{display:flex;align-items:center;gap:10px;padding-top:29px;margin-top:30px;border-top:1px solid #e1e5dc}
 .gomzi-solutions .gs-note-dot{width:5px;height:5px;border-radius:50%;background:var(--gs-brand);flex:none}

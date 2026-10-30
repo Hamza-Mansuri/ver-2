@@ -130,3 +130,66 @@
 .gomzi-inner .gip-feature-photo:hover {
   transform: scale(1.02);
 }
+
+/* Health Category Link Enhancements */
+.gomzi-inner .gip-category-photo {
+  display: block;
+}
+.gomzi-inner .gip-category h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.gomzi-inner .gip-category h3 a:hover {
+  color: #55771d;
+}
+.gomzi-inner .gip-category-action-btn {
+  border: 0;
+  background: transparent;
+  color: #243d2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 12px 0 0;
+  border-top: 1px solid #d5ddcb;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: auto;
+  min-height: 35px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.gomzi-inner .gip-category-action-btn:hover {
+  color: #55771d;
+}
+.gomzi-inner .gip-category-cta-strip {
+  margin-top: 48px;
+  background: #20382b;
+  color: #ffffff;
+  padding: 36px 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.gomzi-inner .gip-category-cta-strip h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+.gomzi-inner .gip-category-cta-strip p {
+  color: #c9d8c4;
+  font-size: 13.5px;
+  margin: 0;
+  max-width: 580px;
+}
+@media (max-width: 760px) {
+  .gomzi-inner .gip-category-cta-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px 20px;
+  }
+}
